@@ -2,7 +2,6 @@ import React from 'react';
 import { SafeAreaView, StyleSheet, Text, Linking } from 'react-native';
 
 import { ActionSheetProvider } from '@expo/react-native-action-sheet'
-import { connectActionSheet } from '@expo/react-native-action-sheet'
 import MyComponentsAbout from '../components/MyComponentsAbout';
 
 
@@ -18,7 +17,7 @@ export default function About(props) {
       
       <Text style={styles.name}>Gilmar Freitas Ribeiro Junior</Text>
       <Text style={styles.github}
-      onPress={() => Linking.openURL("https://github.com/ogilmarjr/DispositivosMoveis-ex1")}> Link do GitHub
+      onPress={() => Linking.openURL('https://github.com/ogilmarjr/DispositivosMoveis-ex1')}> Link do GitHub
       </Text>
     </SafeAreaView>
     
@@ -59,9 +58,9 @@ const styles = StyleSheet.create({
       fontWeight: "bold"
     },
 
-    github:{
+    github: {
+      fontSize: 15,
       color: 'blue',
-      fontSize: 25,
     }
     
   });
