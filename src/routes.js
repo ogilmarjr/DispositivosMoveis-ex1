@@ -13,10 +13,9 @@ export default function Routes() {
   return (
     <NavigationContainer>
         <Stack.Navigator>  
-          <Stack.Screen name="Sobre" component={About} />
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Pet safe" component={Home} />
-          
+          <Stack.Screen name="Sobre" component={About} />
         </Stack.Navigator>
     </NavigationContainer>
   );
